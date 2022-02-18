@@ -1,0 +1,16 @@
+int n,i;
+    do{
+        printf("n = ");
+        scanf("%d", &n);
+    }
+    while(n < 1);
+
+    i = 0;
+    while(n){
+        if(n % 2 == 1){
+            i++;
+        }
+        n /= 2;
+    }
+    printf("%d edinici v N", i);
+}

@@ -1,0 +1,15 @@
+int n,m,k;
+    do{
+        printf("n = ");
+        scanf("%d", &n);
+    }
+    while(n < 1);
+    k = 1;
+    while(n != 0){
+        if(n % 2 == 0){
+            m = m + n%10*k;
+            k = k * 10;
+        }
+        n = n / 10;
+    }
+    printf("m = %d", m);

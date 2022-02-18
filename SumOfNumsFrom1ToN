@@ -1,0 +1,11 @@
+int n,sum,i;
+    do{
+        printf("n = ");
+        scanf("%d", &n);
+    }
+    while(n < 1);
+    sum = 0;
+    for(i = 0;i <= n; i++){
+        sum = sum + i;
+    }
+    printf("Sum = %d", sum);

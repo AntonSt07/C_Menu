@@ -1,0 +1,18 @@
+int n,i,a,sum,avr;
+    do{
+        printf("n = ");
+        scanf("%d", &n);
+    }
+    while(n < 1);
+
+    sum = 0;
+    for(i = 1;i <= n; i++){
+        do{
+            printf("Ocenka na uchenik %d = ", i);
+            scanf("%d", &a);
+            sum = sum + a;
+        }
+        while(a < 2 || a > 6);
+    }
+    avr = sum / n;
+    printf("Sredniq uspeh e: %d", avr);

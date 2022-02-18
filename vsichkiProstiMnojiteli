@@ -1,0 +1,21 @@
+int n,i = 0,k = 2,d = 2;
+    do{
+        printf("n = ");
+        scanf("%d", &n);
+    }
+    while(n<3);
+
+    while(k<=n){
+        if(n%k==0){
+            while(k%d!=0){
+                d++;
+            }
+            if(d==k){
+                i++;
+                printf("%d\n", k);
+
+            }
+        }
+        k++;
+    }
+    printf("\nIma %d prosti delitelq", i);

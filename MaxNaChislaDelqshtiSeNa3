@@ -1,0 +1,28 @@
+int n,a,max,i;
+    do{
+        printf("n = ");
+        scanf("%d", &n);
+    }
+    while(n < 1);
+
+    printf("\n");
+    printf("a = ");
+    scanf("%d", &a);
+    if(a % 3 == 0){
+        max = a;
+    }
+    else{
+        max = 0;
+    }
+    i = 1;
+    while(n > i){
+        printf("a = ");
+        scanf("%d", &a);
+        if(a % 3 == 0){
+            if(a > max){
+                max = a;
+            }
+        }
+        i++;
+    }
+    printf("Max = %d", max);
